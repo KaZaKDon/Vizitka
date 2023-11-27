@@ -1,0 +1,166 @@
+h1 {
+    color: red;
+    font-size: 50px;
+    letter-spacing: 4px;
+    padding-left: 30px; 
+}
+
+body {
+    font-familly: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1,5em; 
+    font-weight: normal;
+    background: lightcyan;
+    color: #0f141e;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: grey;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    /*font-style: italic;*/
+    font-weight: bold;
+    color: #86898f;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: lemonchiffon;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.card-1 {
+    border-radius: 10px;
+    background-color: lightsalmon;
+    margin-bottom: 15px;
+    padding: 20px 50px;  
+}
+
+.card-2 {
+    border-radius: 10px;
+    background-color: lemonchiffon;
+    margin-bottom: 5px;
+    padding: 20px 50px;
+    text-align: center;
+}
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+img {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-familly: inherit;
+}
+
+.btn:hover {
+    opasity: .8;
+    color: orange;
+}
+
+.list {
+    margin: 0;  /* Убираем все отступы*/
+    padding: 0;
+    list-style: none; /* убирает точки списка HTML*/
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+.table td {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.table td:hover {
+    background: #eeefff;
+}
+
+.table tr:nth-child(even) { /*каждый четный*/
+    background: #blue;
+}
+.table td:nth-child(1), .table td:nth-child(3) { /*номера столбцов*/
+    background: #fffeee;
+}
+
+.form-row .form-group {
+    display: inline-block;
+    margin-right: 20px;
+    width: calc(50% - 30px);
+}
+
+.form-row .form-group: last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    pading: 15px 0 10px;
+    outline: none;
+    font-familly: inherit;
+}
+
+@media (max-width: 980px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
